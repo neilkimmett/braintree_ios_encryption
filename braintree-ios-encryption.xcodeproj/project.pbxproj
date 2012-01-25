@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75452FD814A0DD5F00A23E18 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75452FD714A0DD5F00A23E18 /* SenTestingKit.framework */; };
+		7545303014A0E12D00A23E18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7545302C14A0E0DC00A23E18 /* Security.framework */; };
+		7545303114A0E12D00A23E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7545302A14A0E0D300A23E18 /* Foundation.framework */; };
+		D37A1E3914BCDFA90024881F /* BraintreeAESTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E2C14BCDFA90024881F /* BraintreeAESTest.m */; };
+		D37A1E3A14BCDFA90024881F /* BraintreeDecrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E2E14BCDFA90024881F /* BraintreeDecrypt.m */; };
+		D37A1E3B14BCDFA90024881F /* BraintreeEncryptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E3014BCDFA90024881F /* BraintreeEncryptionTest.m */; };
+		D37A1E3C14BCDFA90024881F /* BraintreeRandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E3214BCDFA90024881F /* BraintreeRandomTest.m */; };
+		D37A1E3D14BCDFA90024881F /* BraintreeRSATest.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E3414BCDFA90024881F /* BraintreeRSATest.m */; };
+		D37A1E3E14BCDFA90024881F /* NSDataBase64Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E3614BCDFA90024881F /* NSDataBase64Test.m */; };
+		D37A1E3F14BCDFA90024881F /* TestRSAKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E3814BCDFA90024881F /* TestRSAKeys.m */; };
+		D37A1E7014BCE4020024881F /* BraintreeAES.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6514BCE4020024881F /* BraintreeAES.m */; };
+		D37A1E7114BCE4020024881F /* BraintreeEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6714BCE4020024881F /* BraintreeEncryption.m */; };
+		D37A1E7214BCE4020024881F /* BraintreeRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6914BCE4020024881F /* BraintreeRandom.m */; };
+		D37A1E7314BCE4020024881F /* BraintreeRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6B14BCE4020024881F /* BraintreeRSA.m */; };
+		D37A1E7414BCE4020024881F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6D14BCE4020024881F /* NSData+Base64.m */; };
+		D37A1E7514BCE4020024881F /* SecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6F14BCE4020024881F /* SecKeyWrapper.m */; };
+		D37A1E7614BCE40D0024881F /* BraintreeAES.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6514BCE4020024881F /* BraintreeAES.m */; };
+		D37A1E7714BCE40D0024881F /* BraintreeEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6714BCE4020024881F /* BraintreeEncryption.m */; };
+		D37A1E7814BCE40D0024881F /* BraintreeRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6914BCE4020024881F /* BraintreeRandom.m */; };
+		D37A1E7914BCE40D0024881F /* BraintreeRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6B14BCE4020024881F /* BraintreeRSA.m */; };
+		D37A1E7A14BCE40D0024881F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6D14BCE4020024881F /* NSData+Base64.m */; };
+		D37A1E7B14BCE40D0024881F /* SecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D37A1E6F14BCE4020024881F /* SecKeyWrapper.m */; };
+		D37A1E7C14BCE4170024881F /* BraintreeAES.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6414BCE4020024881F /* BraintreeAES.h */; };
+		D37A1E7D14BCE4170024881F /* BraintreeEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6614BCE4020024881F /* BraintreeEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D37A1E7E14BCE4170024881F /* BraintreeRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6814BCE4020024881F /* BraintreeRandom.h */; };
+		D37A1E7F14BCE4170024881F /* BraintreeRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6A14BCE4020024881F /* BraintreeRSA.h */; };
+		D37A1E8014BCE4170024881F /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6C14BCE4020024881F /* NSData+Base64.h */; };
+		D37A1E8114BCE4170024881F /* SecKeyWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E6E14BCE4020024881F /* SecKeyWrapper.h */; };
+		D37A1E8814BCE4F20024881F /* BraintreeEncyption-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D37A1E8414BCE4F20024881F /* BraintreeEncyption-Prefix.pch */; };
+		E2DD327814B3BD3E00120E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7545302A14A0E0D300A23E18 /* Foundation.framework */; };
+		E2DD328214B3BD6C00120E6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7545302C14A0E0DC00A23E18 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75452FD514A0DD5F00A23E18 /* test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75452FD714A0DD5F00A23E18 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7545302A14A0E0D300A23E18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7545302C14A0E0DC00A23E18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D37A1E2B14BCDFA90024881F /* BraintreeAESTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeAESTest.h; path = test/BraintreeAESTest.h; sourceTree = "<group>"; };
+		D37A1E2C14BCDFA90024881F /* BraintreeAESTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeAESTest.m; path = test/BraintreeAESTest.m; sourceTree = "<group>"; };
+		D37A1E2D14BCDFA90024881F /* BraintreeDecrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeDecrypt.h; path = test/BraintreeDecrypt.h; sourceTree = "<group>"; };
+		D37A1E2E14BCDFA90024881F /* BraintreeDecrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeDecrypt.m; path = test/BraintreeDecrypt.m; sourceTree = "<group>"; };
+		D37A1E2F14BCDFA90024881F /* BraintreeEncryptionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeEncryptionTest.h; path = test/BraintreeEncryptionTest.h; sourceTree = "<group>"; };
+		D37A1E3014BCDFA90024881F /* BraintreeEncryptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeEncryptionTest.m; path = test/BraintreeEncryptionTest.m; sourceTree = "<group>"; };
+		D37A1E3114BCDFA90024881F /* BraintreeRandomTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeRandomTest.h; path = test/BraintreeRandomTest.h; sourceTree = "<group>"; };
+		D37A1E3214BCDFA90024881F /* BraintreeRandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeRandomTest.m; path = test/BraintreeRandomTest.m; sourceTree = "<group>"; };
+		D37A1E3314BCDFA90024881F /* BraintreeRSATest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeRSATest.h; path = test/BraintreeRSATest.h; sourceTree = "<group>"; };
+		D37A1E3414BCDFA90024881F /* BraintreeRSATest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeRSATest.m; path = test/BraintreeRSATest.m; sourceTree = "<group>"; };
+		D37A1E3514BCDFA90024881F /* NSDataBase64Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataBase64Test.h; path = test/NSDataBase64Test.h; sourceTree = "<group>"; };
+		D37A1E3614BCDFA90024881F /* NSDataBase64Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataBase64Test.m; path = test/NSDataBase64Test.m; sourceTree = "<group>"; };
+		D37A1E3714BCDFA90024881F /* TestRSAKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRSAKeys.h; path = test/TestRSAKeys.h; sourceTree = "<group>"; };
+		D37A1E3814BCDFA90024881F /* TestRSAKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestRSAKeys.m; path = test/TestRSAKeys.m; sourceTree = "<group>"; };
+		D37A1E6414BCE4020024881F /* BraintreeAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeAES.h; path = src/BraintreeAES.h; sourceTree = "<group>"; };
+		D37A1E6514BCE4020024881F /* BraintreeAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeAES.m; path = src/BraintreeAES.m; sourceTree = "<group>"; };
+		D37A1E6614BCE4020024881F /* BraintreeEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeEncryption.h; path = src/BraintreeEncryption.h; sourceTree = "<group>"; };
+		D37A1E6714BCE4020024881F /* BraintreeEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeEncryption.m; path = src/BraintreeEncryption.m; sourceTree = "<group>"; };
+		D37A1E6814BCE4020024881F /* BraintreeRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeRandom.h; path = src/BraintreeRandom.h; sourceTree = "<group>"; };
+		D37A1E6914BCE4020024881F /* BraintreeRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeRandom.m; path = src/BraintreeRandom.m; sourceTree = "<group>"; };
+		D37A1E6A14BCE4020024881F /* BraintreeRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BraintreeRSA.h; path = src/BraintreeRSA.h; sourceTree = "<group>"; };
+		D37A1E6B14BCE4020024881F /* BraintreeRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BraintreeRSA.m; path = src/BraintreeRSA.m; sourceTree = "<group>"; };
+		D37A1E6C14BCE4020024881F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "src/NSData+Base64.h"; sourceTree = "<group>"; };
+		D37A1E6D14BCE4020024881F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "src/NSData+Base64.m"; sourceTree = "<group>"; };
+		D37A1E6E14BCE4020024881F /* SecKeyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecKeyWrapper.h; path = src/SecKeyWrapper.h; sourceTree = "<group>"; };
+		D37A1E6F14BCE4020024881F /* SecKeyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecKeyWrapper.m; path = src/SecKeyWrapper.m; sourceTree = "<group>"; };
+		D37A1E8314BCE4F20024881F /* braintree-ios-encryption-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "braintree-ios-encryption-Info.plist"; path = "src/braintree-ios-encryption-Info.plist"; sourceTree = "<group>"; };
+		D37A1E8414BCE4F20024881F /* BraintreeEncyption-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BraintreeEncyption-Prefix.pch"; path = "src/BraintreeEncyption-Prefix.pch"; sourceTree = "<group>"; };
+		D37A1E8714BCE4F20024881F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		E2DD327714B3BD3E00120E6C /* libBraintreeEncryption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBraintreeEncryption.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75452FD114A0DD5E00A23E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75452FD814A0DD5F00A23E18 /* SenTestingKit.framework in Frameworks */,
+				7545303014A0E12D00A23E18 /* Security.framework in Frameworks */,
+				7545303114A0E12D00A23E18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DD327414B3BD3E00120E6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DD327814B3BD3E00120E6C /* Foundation.framework in Frameworks */,
+				E2DD328214B3BD6C00120E6C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75452FB914A0DD5E00A23E18 = {
+			isa = PBXGroup;
+			children = (
+				D37A1E6314BCE3DD0024881F /* src */,
+				D37A1E2A14BCDF840024881F /* test */,
+				75452FD614A0DD5F00A23E18 /* Frameworks */,
+				75452FC814A0DD5E00A23E18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75452FC814A0DD5E00A23E18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75452FD514A0DD5F00A23E18 /* test.octest */,
+				E2DD327714B3BD3E00120E6C /* libBraintreeEncryption.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75452FD614A0DD5F00A23E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7545302C14A0E0DC00A23E18 /* Security.framework */,
+				7545302A14A0E0D300A23E18 /* Foundation.framework */,
+				75452FD714A0DD5F00A23E18 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D37A1E2A14BCDF840024881F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				D37A1E2B14BCDFA90024881F /* BraintreeAESTest.h */,
+				D37A1E2C14BCDFA90024881F /* BraintreeAESTest.m */,
+				D37A1E2D14BCDFA90024881F /* BraintreeDecrypt.h */,
+				D37A1E2E14BCDFA90024881F /* BraintreeDecrypt.m */,
+				D37A1E2F14BCDFA90024881F /* BraintreeEncryptionTest.h */,
+				D37A1E3014BCDFA90024881F /* BraintreeEncryptionTest.m */,
+				D37A1E3114BCDFA90024881F /* BraintreeRandomTest.h */,
+				D37A1E3214BCDFA90024881F /* BraintreeRandomTest.m */,
+				D37A1E3314BCDFA90024881F /* BraintreeRSATest.h */,
+				D37A1E3414BCDFA90024881F /* BraintreeRSATest.m */,
+				D37A1E3514BCDFA90024881F /* NSDataBase64Test.h */,
+				D37A1E3614BCDFA90024881F /* NSDataBase64Test.m */,
+				D37A1E3714BCDFA90024881F /* TestRSAKeys.h */,
+				D37A1E3814BCDFA90024881F /* TestRSAKeys.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		D37A1E6314BCE3DD0024881F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D37A1E6414BCE4020024881F /* BraintreeAES.h */,
+				D37A1E6514BCE4020024881F /* BraintreeAES.m */,
+				D37A1E6614BCE4020024881F /* BraintreeEncryption.h */,
+				D37A1E6714BCE4020024881F /* BraintreeEncryption.m */,
+				D37A1E6814BCE4020024881F /* BraintreeRandom.h */,
+				D37A1E6914BCE4020024881F /* BraintreeRandom.m */,
+				D37A1E6A14BCE4020024881F /* BraintreeRSA.h */,
+				D37A1E6B14BCE4020024881F /* BraintreeRSA.m */,
+				D37A1E6C14BCE4020024881F /* NSData+Base64.h */,
+				D37A1E6D14BCE4020024881F /* NSData+Base64.m */,
+				D37A1E6E14BCE4020024881F /* SecKeyWrapper.h */,
+				D37A1E6F14BCE4020024881F /* SecKeyWrapper.m */,
+				D37A1E8214BCE4D40024881F /* Supporting Files */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D37A1E8214BCE4D40024881F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D37A1E8314BCE4F20024881F /* braintree-ios-encryption-Info.plist */,
+				D37A1E8414BCE4F20024881F /* BraintreeEncyption-Prefix.pch */,
+				D37A1E8514BCE4F20024881F /* en.lproj */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D37A1E8514BCE4F20024881F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D37A1E8614BCE4F20024881F /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = src/en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E2DD327514B3BD3E00120E6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37A1E7D14BCE4170024881F /* BraintreeEncryption.h in Headers */,
+				D37A1E7C14BCE4170024881F /* BraintreeAES.h in Headers */,
+				D37A1E7E14BCE4170024881F /* BraintreeRandom.h in Headers */,
+				D37A1E7F14BCE4170024881F /* BraintreeRSA.h in Headers */,
+				D37A1E8014BCE4170024881F /* NSData+Base64.h in Headers */,
+				D37A1E8114BCE4170024881F /* SecKeyWrapper.h in Headers */,
+				D37A1E8814BCE4F20024881F /* BraintreeEncyption-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		75452FD414A0DD5E00A23E18 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75452FF114A0DD5F00A23E18 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				75452FD014A0DD5E00A23E18 /* Sources */,
+				75452FD114A0DD5E00A23E18 /* Frameworks */,
+				75452FD214A0DD5E00A23E18 /* Resources */,
+				75452FD314A0DD5E00A23E18 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = "braintree-ios-encryptionTests";
+			productReference = 75452FD514A0DD5F00A23E18 /* test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E2DD327614B3BD3E00120E6C /* BraintreeEncryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2DD327F14B3BD3E00120E6C /* Build configuration list for PBXNativeTarget "BraintreeEncryption" */;
+			buildPhases = (
+				E2DD327314B3BD3E00120E6C /* Sources */,
+				E2DD327414B3BD3E00120E6C /* Frameworks */,
+				E2DD327514B3BD3E00120E6C /* Headers */,
+				E2DD328F14B3BFFB00120E6C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BraintreeEncryption;
+			productName = BTEncryption;
+			productReference = E2DD327714B3BD3E00120E6C /* libBraintreeEncryption.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75452FBB14A0DD5E00A23E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 75452FBE14A0DD5E00A23E18 /* Build configuration list for PBXProject "braintree-ios-encryption" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75452FB914A0DD5E00A23E18;
+			productRefGroup = 75452FC814A0DD5E00A23E18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75452FD414A0DD5E00A23E18 /* test */,
+				E2DD327614B3BD3E00120E6C /* BraintreeEncryption */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75452FD214A0DD5E00A23E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75452FD314A0DD5E00A23E18 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		E2DD328F14B3BFFB00120E6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VERBOSE=\"false\"\n\nif [ $VERBOSE = \"true\" ]; then\n  echo \"BUILD_DIR = $BUILD_DIR\"\n  echo \"BUILD_ROOT = $BUILD_ROOT\"\n  echo \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\n  echo \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\n  echo \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\n  echo \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]; then\n  OTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\n  OTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]; then\n  echo \"not recurring\"\nelse\n  export ALREADYINVOKED=\"true\"\n\n  echo \"invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\n  xcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n  ACTION=\"build\"\n\n  CURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\n  CURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\n  echo \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\n  echo \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\n  CREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n  rm -rf \"${CREATING_UNIVERSAL_DIR}\" && mkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n  echo \"lipo: configuration: (${CONFIGURATION}) output: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\n  lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n  # copy include files\n\n  if [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]; then\n    mkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n    cp \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n  fi\n\n  if [ ! -d \"$(pwd)/products\" ]; then\n    mkdir -p \"$(pwd)/products\"\n  fi\n  cp -R \"${CREATING_UNIVERSAL_DIR}\" \"$(pwd)/products\"\n\nfi";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75452FD014A0DD5E00A23E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37A1E3914BCDFA90024881F /* BraintreeAESTest.m in Sources */,
+				D37A1E3A14BCDFA90024881F /* BraintreeDecrypt.m in Sources */,
+				D37A1E3B14BCDFA90024881F /* BraintreeEncryptionTest.m in Sources */,
+				D37A1E3C14BCDFA90024881F /* BraintreeRandomTest.m in Sources */,
+				D37A1E3D14BCDFA90024881F /* BraintreeRSATest.m in Sources */,
+				D37A1E3E14BCDFA90024881F /* NSDataBase64Test.m in Sources */,
+				D37A1E3F14BCDFA90024881F /* TestRSAKeys.m in Sources */,
+				D37A1E7014BCE4020024881F /* BraintreeAES.m in Sources */,
+				D37A1E7114BCE4020024881F /* BraintreeEncryption.m in Sources */,
+				D37A1E7214BCE4020024881F /* BraintreeRandom.m in Sources */,
+				D37A1E7314BCE4020024881F /* BraintreeRSA.m in Sources */,
+				D37A1E7414BCE4020024881F /* NSData+Base64.m in Sources */,
+				D37A1E7514BCE4020024881F /* SecKeyWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DD327314B3BD3E00120E6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37A1E7614BCE40D0024881F /* BraintreeAES.m in Sources */,
+				D37A1E7714BCE40D0024881F /* BraintreeEncryption.m in Sources */,
+				D37A1E7814BCE40D0024881F /* BraintreeRandom.m in Sources */,
+				D37A1E7914BCE40D0024881F /* BraintreeRSA.m in Sources */,
+				D37A1E7A14BCE40D0024881F /* NSData+Base64.m in Sources */,
+				D37A1E7B14BCE40D0024881F /* SecKeyWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D37A1E8614BCE4F20024881F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37A1E8714BCE4F20024881F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75452FEC14A0DD5F00A23E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75452FED14A0DD5F00A23E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75452FF214A0DD5F00A23E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/BraintreeEncryption-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "test/BraintreeEncryptionTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		75452FF314A0DD5F00A23E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/BraintreeEncryption-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "test/BraintreeEncryptionTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		E2DD328014B3BD3E00120E6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BTEncryption.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/BraintreeEncryption-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(TARGET_NAME)";
+				"INSTALL_PATH[sdk=*]" = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Debug;
+		};
+		E2DD328114B3BD3E00120E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BTEncryption.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/BraintreeEncryption-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75452FBE14A0DD5E00A23E18 /* Build configuration list for PBXProject "braintree-ios-encryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75452FEC14A0DD5F00A23E18 /* Debug */,
+				75452FED14A0DD5F00A23E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75452FF114A0DD5F00A23E18 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75452FF214A0DD5F00A23E18 /* Debug */,
+				75452FF314A0DD5F00A23E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DD327F14B3BD3E00120E6C /* Build configuration list for PBXNativeTarget "BraintreeEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DD328014B3BD3E00120E6C /* Debug */,
+				E2DD328114B3BD3E00120E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75452FBB14A0DD5E00A23E18 /* Project object */;
+}
