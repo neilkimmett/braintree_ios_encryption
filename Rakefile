@@ -19,6 +19,26 @@ end
 
 task :build => ["build:debug"]
 
+task :release => ["build:release", "release:archive"]
+
+namespace :release do
+  task :archive do
+    version = File.read('src/BraintreeEncryption.m')[/VERSION = @"(.*)";/, 1]
+    puts version
+
+    target_filename = "BraintreeEncryption-#{version}"
+    puts target_filename
+
+    FileUtils.mkdir_p("products/archive/")
+
+    Dir.chdir("products/BraintreeEncryption") do
+      sh "tar cf #{target_filename}.tar --exclude='*.tar' ."
+      sh "gzip #{target_filename}.tar"
+      FileUtils.mv("./#{target_filename}.tar.gz", "../../products/archive/")
+    end
+  end
+end
+
 namespace :build do
   task :debug do
     xcode_build("Debug", BUILD_SCHEME)
@@ -26,6 +46,8 @@ namespace :build do
 
   task :release do
     xcode_build("Release", BUILD_SCHEME)
+    FileUtils.mkdir_p("products/BraintreeEncryption")
+    sh "cp -r products/Release-universal/ products/BraintreeEncryption"
   end
 
   task :clean do

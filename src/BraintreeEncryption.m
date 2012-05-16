@@ -9,7 +9,7 @@
 @synthesize publicKey;
 @synthesize applicationTag;
 
-NSString * const VERSION = @"1.0.0";
+NSString * const VERSION = @"1.0.1";
 
 - (id)init {
   self = [super init];
@@ -31,7 +31,8 @@ NSString * const VERSION = @"1.0.0";
 
   NSString * encryptedData = [BraintreeAES encrypt:data withKey:randomKey];
 
-  return [[[[self tokenWithVersion]
+  return [[[[[self tokenWithVersion]
+           stringByAppendingString: @"$"]
            stringByAppendingString: encryptedKey]
            stringByAppendingString: @"$"]
            stringByAppendingString: encryptedData];

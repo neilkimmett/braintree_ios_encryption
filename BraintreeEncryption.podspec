@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name      = "BraintreeEncryption"
-  spec.version   = "1.0.0"
+  spec.version   = "1.0.1"
   spec.summary   = "Library for client-side encryption of sensitive data to be read by Braintree Payments"
   spec.homepage  = "http://www.braintreepayments.com"
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.source    = {
     :git => "https://github.com/braintree/braintree_ios_encryption",
-    :tag => "1.0.0"
+    :tag => "1.0.1"
   }
 
   spec.source_files = 'src/*.{h,m}'
