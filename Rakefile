@@ -1,7 +1,8 @@
 WORKSPACE    = "braintree-ios-encryption.xcodeproj/project.xcworkspace/"
-SDK          = "iphonesimulator4.3"
+SDK          = "iphonesimulator5.1"
 TEST_SCHEME  = "test"
 BUILD_SCHEME = "braintree-encryption"
+DEVELOPER_DIR = "/Applications/Xcode.app/Contents/Developer"
 
 task :default => "test:unit"
 
@@ -56,7 +57,7 @@ namespace :build do
 end
 
 def start_simulator
-  Kernel.system "open /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\\ Simulator.app"
+  Kernel.system "open #{DEVELOPER_DIR}/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\\ Simulator.app"
 end
 
 def kill_simulator

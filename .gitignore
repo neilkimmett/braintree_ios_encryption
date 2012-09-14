@@ -4,6 +4,7 @@
 
 build/
 products/
+static_library/
 
 xcuserdata
 .xcodeproj/ !*.xcodeproj/project.pbxproj

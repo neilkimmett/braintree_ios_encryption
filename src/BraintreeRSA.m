@@ -48,25 +48,17 @@
   if(result != noErr)
     NSLog(@"Secure Key Encryption Failed With Error: %ld", result);
 
-
-  return [[[NSData alloc] initWithBytes: cipherTextBuf length:cipherTextSize] autorelease];
+  return [[NSData alloc] initWithBytes: cipherTextBuf length:cipherTextSize];
 }
 
 -(SecKeyRef) getKeychainPublicKeyRef {
   if(publicKeyRef != NULL)
     return publicKeyRef;
 
-  SecKeyWrapper * wrapper = [[[SecKeyWrapper alloc] init] autorelease];
+  SecKeyWrapper * wrapper = [[SecKeyWrapper alloc] init];
   NSData * publicKeyData  = [NSData dataWithBase64EncodedString: publicKey];
 
   return [wrapper addPeerPublicKey:applicationTag keyBits: publicKeyData];
-}
-
--(void) dealloc {
-  publicKeyRef = NULL;
-  [publicKey release];
-  [applicationTag release];
-  [super dealloc];
 }
 
 @end

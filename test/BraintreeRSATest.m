@@ -17,8 +17,6 @@
 
   NSString * plainStr = [BraintreeDecrypt decryptWithKey:(SecKeyRef)[BraintreeDecrypt getPrivateKeyRef:privateKey] Data:encryptedData];
 
-  [rsa release];
-
   STAssertEqualObjects(plainStr, @"test data", @"success!");
 }
 

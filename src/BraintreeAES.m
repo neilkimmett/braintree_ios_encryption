@@ -7,7 +7,7 @@
 
 +(NSString*) encrypt:(NSData*) data withKey:(NSString*) key {
   uint8_t * words = [BraintreeRandom randomWords: 4];
-  NSData * ivData = [[[NSData alloc] initWithBytes:words length: sizeof(words)] autorelease];
+  NSData * ivData = [[NSData alloc] initWithBytes:words length: sizeof(words)];
   return [self encrypt:data withKey:key Iv:ivData];
 }
 

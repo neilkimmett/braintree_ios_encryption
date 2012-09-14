@@ -33,23 +33,21 @@
 	NSData * peerTag = [[NSData alloc] initWithBytes:(const void *)[peerName UTF8String] length:[peerName length]];
 	NSMutableDictionary * peerPublicKeyAttr = [[NSMutableDictionary alloc] init];
 
-	[peerPublicKeyAttr setObject:(id)kSecClassKey       forKey:(id)kSecClass];
-	[peerPublicKeyAttr setObject:(id)kSecAttrKeyTypeRSA forKey:(id)kSecAttrKeyType];
-	[peerPublicKeyAttr setObject:peerTag                forKey:(id)kSecAttrApplicationTag];
-	[peerPublicKeyAttr setObject:publicKey              forKey:(id)kSecValueData];
-	[peerPublicKeyAttr setObject:(id)kCFBooleanTrue     forKey:(id)kSecReturnRef];
+	[peerPublicKeyAttr setObject:(__bridge id)kSecClassKey       forKey:(__bridge id)kSecClass];
+	[peerPublicKeyAttr setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+	[peerPublicKeyAttr setObject:peerTag                forKey:(__bridge id)kSecAttrApplicationTag];
+	[peerPublicKeyAttr setObject:publicKey              forKey:(__bridge id)kSecValueData];
+	[peerPublicKeyAttr setObject:(__bridge id)kCFBooleanTrue     forKey:(__bridge id)kSecReturnRef];
 
-	sanityCheck = SecItemAdd((CFDictionaryRef) peerPublicKeyAttr, (CFTypeRef *)&peerKeyRef);
+	sanityCheck = SecItemAdd((__bridge CFDictionaryRef) peerPublicKeyAttr, (CFTypeRef *)&peerKeyRef);
 
 	LOGGING_FACILITY1( sanityCheck == noErr, @"Problem adding the public key, OSStatus == %ld.", sanityCheck );
 
-  [peerPublicKeyAttr removeObjectForKey:(id)kSecValueData];
-  sanityCheck = SecItemCopyMatching((CFDictionaryRef) peerPublicKeyAttr, (CFTypeRef *)&peerKeyRef);
+  [peerPublicKeyAttr removeObjectForKey:(__bridge id)kSecValueData];
+  sanityCheck = SecItemCopyMatching((__bridge CFDictionaryRef) peerPublicKeyAttr, (CFTypeRef *)&peerKeyRef);
 
 	LOGGING_FACILITY1( sanityCheck == noErr && peerKeyRef != NULL, @"Problem acquiring reference to the public key, OSStatus == %ld.", sanityCheck );
 
-	[peerTag release];
-	[peerPublicKeyAttr release];
 	return peerKeyRef;
 }
 
@@ -61,16 +59,13 @@
 	NSData * peerTag = [[NSData alloc] initWithBytes:(const void *)[peerName UTF8String] length:[peerName length]];
 	NSMutableDictionary * peerPublicKeyAttr = [[NSMutableDictionary alloc] init];
 
-	[peerPublicKeyAttr setObject:(id)kSecClassKey forKey:(id)kSecClass];
-	[peerPublicKeyAttr setObject:(id)kSecAttrKeyTypeRSA forKey:(id)kSecAttrKeyType];
-	[peerPublicKeyAttr setObject:peerTag forKey:(id)kSecAttrApplicationTag];
+	[peerPublicKeyAttr setObject:(__bridge id)kSecClassKey forKey:(__bridge id)kSecClass];
+	[peerPublicKeyAttr setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+	[peerPublicKeyAttr setObject:peerTag forKey:(__bridge id)kSecAttrApplicationTag];
 
-	sanityCheck = SecItemDelete((CFDictionaryRef) peerPublicKeyAttr);
+	sanityCheck = SecItemDelete((__bridge CFDictionaryRef) peerPublicKeyAttr);
 
 	LOGGING_FACILITY1( sanityCheck == noErr || sanityCheck == errSecItemNotFound, @"Problem deleting the peer public key from keychain, OSStatus == %ld.", sanityCheck );
-
-	[peerTag release];
-	[peerPublicKeyAttr release];
 }
 
 @end

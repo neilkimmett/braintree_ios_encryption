@@ -26,7 +26,7 @@ NSString * const VERSION = @"1.0.1";
 
 -(NSString*) encryptData: (NSData*) data {
   NSString * randomKey = [[BraintreeRandom randomWordsAsData:8] base64Encoding];
-  BraintreeRSA * rsa = [[[BraintreeRSA alloc] initWithKey:publicKey] autorelease];
+  BraintreeRSA * rsa = [[BraintreeRSA alloc] initWithKey:publicKey];
   NSString * encryptedKey = [[rsa encrypt: randomKey] base64Encoding];
 
   NSString * encryptedData = [BraintreeAES encrypt:data withKey:randomKey];
@@ -48,12 +48,6 @@ NSString * const VERSION = @"1.0.1";
 
   return [NSString stringWithFormat: @"$bt3|ios_%@", formattedVersion];
 
-}
-
--(void) dealloc {
-  [publicKey release];
-  [applicationTag release];
-  [super dealloc];
 }
 
 @end

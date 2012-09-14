@@ -47,24 +47,21 @@
 
   NSData * privateKeyData = [NSData dataWithBase64EncodedString: privateKey];
 
-  [peerKeyAttr setObject:(id)kSecClassKey             forKey:(id)kSecClass];
-  [peerKeyAttr setObject:peerTag                      forKey:(id)kSecAttrApplicationTag];
-  [peerKeyAttr setObject:(id)kSecAttrKeyTypeRSA       forKey:(id)kSecAttrKeyType];
-	[peerKeyAttr setObject:privateKeyData               forKey:(id)kSecValueData];
-  [peerKeyAttr setObject:(id)kSecAttrKeyClassPrivate  forKey:(id)kSecAttrKeyClass];
-  [peerKeyAttr setObject:(id)kCFBooleanTrue           forKey:(id)kSecReturnRef];
+  [peerKeyAttr setObject:(__bridge id)kSecClassKey             forKey:(__bridge id)kSecClass];
+  [peerKeyAttr setObject:peerTag                      forKey:(__bridge id)kSecAttrApplicationTag];
+  [peerKeyAttr setObject:(__bridge id)kSecAttrKeyTypeRSA       forKey:(__bridge id)kSecAttrKeyType];
+	[peerKeyAttr setObject:privateKeyData               forKey:(__bridge id)kSecValueData];
+  [peerKeyAttr setObject:(__bridge id)kSecAttrKeyClassPrivate  forKey:(__bridge id)kSecAttrKeyClass];
+  [peerKeyAttr setObject:(__bridge id)kCFBooleanTrue           forKey:(__bridge id)kSecReturnRef];
 
-  OSStatus result = SecItemAdd((CFDictionaryRef)peerKeyAttr, (CFTypeRef*)&privateKeyRef);
+  OSStatus result = SecItemAdd((__bridge CFDictionaryRef)peerKeyAttr, (CFTypeRef*)&privateKeyRef);
   NSAssert(result == errSecSuccess, @"keychain item add failure: %ld", result);
 
-  [peerKeyAttr removeObjectForKey:(id)kSecValueData];
+  [peerKeyAttr removeObjectForKey:(__bridge id)kSecValueData];
 
-  result = SecItemCopyMatching((CFDictionaryRef) peerKeyAttr, (CFTypeRef *)&privateKeyRef);
+  result = SecItemCopyMatching((__bridge CFDictionaryRef) peerKeyAttr, (CFTypeRef *)&privateKeyRef);
 
   NSAssert(privateKeyRef != NULL && result == errSecSuccess, @"keychain data lookup failure: %ld", result);
-
-  [peerKeyAttr release];
-  [wrapper release];
 
   return privateKeyRef;
 }
