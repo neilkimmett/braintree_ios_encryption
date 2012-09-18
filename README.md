@@ -11,7 +11,8 @@ To use the static library follow these steps:
 1. Download and unzip the latest version of libBraintreeEncryption
 2. Add the ``BraintreeEncryption`` folder to your Xcode project
 3. Make sure the header search path includes the ``BraintreeEncryption`` folder
-4. Make sure to link against our library as well as any other frameworks you might need
+4. Link your project against Security.framework (project settings -> Build Phases -> Link Binary With Libraries)
+5. Make sure to link against our library as well as any other frameworks you might need
 
 If instead you want to use the library from the source files then follow these steps:
 
@@ -19,6 +20,7 @@ If instead you want to use the library from the source files then follow these s
 2. Right-click on the Navigation pane in XCode and 'Add Files to "MyProject..."'
 3. Select the recently cloned Braintree encryption folder
 4. Make sure that the "Copy Items Into Destination Groups Folder" option is checked, then select "Add"
+5. Link your project against Security.framework (project settings -> Build Phases -> Link Binary With Libraries)
 
 Here's a quick example.
 
